@@ -1,0 +1,11 @@
+<h1>To do Items</h1>
+
+<ul>
+    {% for list in todo_items %}
+    <li>
+        <h4>{{list.title}}</h4>
+        <p>{{list.description}}</p>
+        <p>{{list.deadline}}</p>
+    </li>
+    {% endfor %}
+</ul>
